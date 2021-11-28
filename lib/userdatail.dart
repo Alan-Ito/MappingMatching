@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class UserDtailView extends StatelessWidget {
@@ -67,7 +66,7 @@ class __State extends State<SearchPage> {
                 SizedBox(
                   child: TextButton.icon(
                   onPressed: () {},
-                    icon: Icon(FontAwesomeIcons.check, size: 45, color: Colors.black),
+                    icon: Icon(Icons.check, size: 45, color: Colors.black),
                     label: new Text(
                           '投稿する',
                           style: TextStyle(
@@ -91,7 +90,7 @@ class __State extends State<SearchPage> {
                 SizedBox(
                   child: TextButton.icon(
                   onPressed: () {},
-                      icon: Icon(FontAwesomeIcons.bookmark, size: 45, color: Colors.black),
+                      icon: Icon(Icons.bookmark, size: 45, color: Colors.black),
                       label: new Text(
                         'ブックマーク',
                         style: TextStyle(
@@ -111,7 +110,7 @@ class __State extends State<SearchPage> {
                 SizedBox(
                   child: TextButton.icon(
                   onPressed: () {},
-                      icon: Icon(FontAwesomeIcons.shoppingCart, size: 45, color: Colors.black),
+                      icon: Icon(Icons.shopping_cart, size: 45, color: Colors.black),
                       label: new Text(
                         'お気に入りの店',
                         style: TextStyle(
