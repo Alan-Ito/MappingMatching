@@ -6,6 +6,7 @@ import './footer.dart';
 import './page/view.dart';
 import './bloc/view-ctrl-bloc.dart';
 
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatefulWidget { // statelessからstatefulに変更

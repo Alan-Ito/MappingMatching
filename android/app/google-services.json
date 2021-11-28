@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1011953246258",
+    "project_id": "mapimachi",
+    "storage_bucket": "mapimachi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1011953246258:android:8a60bbb47b93aa94ae5c2b",
+        "android_client_info": {
+          "package_name": "com.example.mappingmatching"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1011953246258-66kvcc8elkr8h50300cal7c1epmrh9et.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJIJWiv8KkX5FlGbUiRSQ_PxeXkfQoWhk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1011953246258-66kvcc8elkr8h50300cal7c1epmrh9et.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
