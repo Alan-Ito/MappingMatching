@@ -2,7 +2,8 @@
     package="com.example.mappingmatching">
    <application
         android:label="mappingmatching"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/ic_launcher"
+        android:value="AIzaSyD2bFGjOtBW9DiAam3KPybZ3E7kj_j37E4">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
@@ -39,3 +40,4 @@
             android:value="2" />
     </application>
 </manifest>
+
