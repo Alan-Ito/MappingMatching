@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class UserPage extends StatelessWidget {
+class UserDtailView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -16,19 +16,21 @@ class UserPage extends StatelessWidget {
           foregroundColor: Colors.black,
         ),
       ),
-      home: UserDetail(),
+      // リスト一覧画面を表示
+      home: SearchPage(),
     );
   }
 }
 
-class UserDetail extends StatefulWidget {
+class SearchPage extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
     return __State();
   }
 }
 
-class __State extends State<UserDetail> {
+// 検索画面用Widget
+class __State extends State<SearchPage> {
 
   @override
   Widget build(BuildContext context) {
@@ -44,7 +46,7 @@ class __State extends State<UserDetail> {
               clipBehavior: Clip.hardEdge,
               child: Align(
                 alignment: Alignment.topCenter,
-                // child: Image.network('https://4.bp.blogspot.com/-MSnCCDbY2ok/VYJrrLjwhPI/AAAAAAAAuiE/l_dcVIvJ5Ac/s400/nigaoe_zabieru_xavier.p'),
+                child: Image.network('https://4.bp.blogspot.com/-MSnCCDbY2ok/VYJrrLjwhPI/AAAAAAAAuiE/l_dcVIvJ5Ac/s400/nigaoe_zabieru_xavier.p'),
               ),
             ),
             new Text(

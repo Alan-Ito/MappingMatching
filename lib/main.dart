@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import './search.dart';
+import './userdatail.dart';
 
 import './header.dart';
 import './footer.dart';
