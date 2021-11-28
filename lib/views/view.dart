@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import '../matching.dart';
-import '../searching.dart';
-import '../mapping.dart';
-import '../userpage.dart';
+import 'package:mappingmatching/pages/mapping.dart';
+import 'package:mappingmatching/pages/matching.dart';
+import 'package:mappingmatching/pages/searching.dart';
+import 'package:mappingmatching/pages/userpage.dart';
+
 
 class View extends StatefulWidget {
   final Stream<int> viewCtrl;

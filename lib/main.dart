@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:mappingmatching/views/view.dart';
 
 import './header.dart';
 import './footer.dart';
 
-import './page/view.dart';
 import './bloc/view-ctrl-bloc.dart';
+
 
 
 void main() => runApp(MyApp());
