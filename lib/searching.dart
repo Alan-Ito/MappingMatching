@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class SearchView extends StatelessWidget {
+class SearchingPage extends StatelessWidget {
+  SearchingPage({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -49,7 +49,7 @@ class __State extends State<SearchPage> {
               decoration: InputDecoration(
                 border: OutlineInputBorder(),
                 suffixIcon: Icon(
-                  FontAwesomeIcons.search,
+                  Icons.search,
                 ),
               ),
             ),
@@ -66,7 +66,7 @@ class __State extends State<SearchPage> {
                 SizedBox(
                   child: ElevatedButton.icon(
                       onPressed: () {},
-                      icon: Icon(FontAwesomeIcons.mapMarkedAlt, size: 45, color: Colors.black),
+                      icon: Icon(Icons.place, size: 45, color: Colors.black),
                       label: new Text(
                         '現在地近くから探す',
                         style: TextStyle(
