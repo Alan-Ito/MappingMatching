@@ -1,29 +1,35 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:mappingmatching/views/view.dart';
+import 'package:get/get.dart';
+import 'package:mappingmatching/controllers/auth_controller.dart';
+import 'package:mappingmatching/pages/userpage.dart';
 
-import './header.dart';
-import './footer.dart';
+import 'bloc/view-ctrl-bloc.dart';
+import 'footer.dart';
+import 'header.dart';
+import 'pages/auth/signup.dart';
 
-import './bloc/view-ctrl-bloc.dart';
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp().then((value) => Get.put(AuthController()));
+  runApp(const MyApp());
+}
 
-
-
-void main() => runApp(MyApp());
-
-class MyApp extends StatefulWidget { // statelessからstatefulに変更
+class MyApp extends StatefulWidget {
+  // statelessからstatefulに変更
   const MyApp({Key? key}) : super(key: key);
 
   @override
-  State<MyApp> createState() =>_MyApp(); //MyAppクラスのState
-//Widget build(BuildContext context) {
-//return MaterialApp(
-//title: 'Flutter Demo',
-//theme: ThemeData(
-//primarySwatch: Colors.yellow,
-//),
-//home: const MyHomePage(title: 'MappingMatching'),
-//);
-//}
+  State<MyApp> createState() => _MyApp(); //MyAppクラスのState
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.yellow,
+      ),
+      home: UserPage()//const MyHomePage(title: 'MappingMatching'),
+    );
+  }
 }
 
 class _MyApp extends State<MyApp> {
@@ -31,7 +37,7 @@ class _MyApp extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
         theme: ThemeData(
@@ -40,12 +46,12 @@ class _MyApp extends State<MyApp> {
         ),
         home: Scaffold(
           appBar: Header(),
-          body: View(viewCtrl: viewCtrl!.viewStream), // 受け取るためにstreamを渡す
-          bottomNavigationBar: Footer(viewCtrl: viewCtrl!.viewSink), // インデックスを流すためにsinkを渡す
-        )
-    );
+          body:
+              sign_up_page(), //View(viewCtrl: viewCtrl!.viewStream), // 受け取るためにstreamを渡す
+          bottomNavigationBar:
+              Footer(viewCtrl: viewCtrl!.viewSink), // インデックスを流すためにsinkを渡す
+        ));
   }
-
 
   @override
   void initState() {
